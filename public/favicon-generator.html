@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGen Pro Favicon Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2B7FFF;
+            margin-bottom: 20px;
+        }
+        
+        .favicon-preview {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+            align-items: center;
+        }
+        
+        .favicon-size {
+            text-align: center;
+        }
+        
+        .favicon-box {
+            background: linear-gradient(135deg, #2B7FFF 0%, #4A9FFF 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .size-16 { width: 16px; height: 16px; font-size: 8px; }
+        .size-32 { width: 32px; height: 32px; font-size: 16px; }
+        .size-48 { width: 48px; height: 48px; font-size: 24px; }
+        .size-64 { width: 64px; height: 64px; font-size: 32px; }
+        
+        .instructions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .instructions h3 {
+            color: #2B7FFF;
+            margin-top: 0;
+        }
+        
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin: 8px 0;
+        }
+        
+        .code {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 UGen Pro Favicon Generator</h1>
+        
+        <p>This page helps you create the perfect favicon for UGen Pro that will show up correctly in Google search results.</p>
+        
+        <div class="favicon-preview">
+            <div class="favicon-size">
+                <div class="favicon-box size-16">U</div>
+                <div>16x16</div>
+            </div>
+            <div class="favicon-size">
+                <div class="favicon-box size-32">U</div>
+                <div>32x32</div>
+            </div>
+            <div class="favicon-size">
+                <div class="favicon-box size-48">U</div>
+                <div>48x48</div>
+            </div>
+            <div class="favicon-size">
+                <div class="favicon-box size-64">U</div>
+                <div>64x64</div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 How to Create Your Favicon:</h3>
+            <ol>
+                <li><strong>Design your favicon:</strong> Create a simple, recognizable icon (16x16, 32x32, 48x48 pixels)</li>
+                <li><strong>Use your brand colors:</strong> Blue gradient (#2B7FFF to #4A9FFF)</li>
+                <li><strong>Keep it simple:</strong> Avoid complex details that won't be visible at small sizes</li>
+                <li><strong>Test visibility:</strong> Make sure it's readable at 16x16 pixels</li>
+            </ol>
+            
+            <h3>🛠️ Tools to Create Favicon:</h3>
+            <ul>
+                <li><strong>Online:</strong> <a href="https://favicon.io/" target="_blank">favicon.io</a> - Free favicon generator</li>
+                <li><strong>Design:</strong> Canva, Figma, or Adobe Illustrator</li>
+                <li><strong>Convert:</strong> Convert PNG to ICO format</li>
+            </ul>
+            
+            <h3>📁 Files You Need:</h3>
+            <div class="code">
+public/
+├── favicon.ico          (16x16, 32x32, 48x48 combined)
+├── favicon-16x16.ico    (16x16)
+├── favicon-32x32.ico    (32x32)
+└── ugenpro-logo.svg     (SVG version)
+            </div>
+            
+            <div class="highlight">
+                <strong>💡 Pro Tip:</strong> Google prefers ICO format for favicons. Make sure your favicon.ico file contains multiple sizes (16x16, 32x32, 48x48) in one file.
+            </div>
+            
+            <h3>🔍 Testing Your Favicon:</h3>
+            <ol>
+                <li>Upload your favicon files to the <code>public/</code> folder</li>
+                <li>Clear your browser cache</li>
+                <li>Test in different browsers</li>
+                <li>Use <a href="https://realfavicongenerator.net/" target="_blank">RealFaviconGenerator</a> to test</li>
+                <li>Submit to Google Search Console for faster indexing</li>
+            </ol>
+        </div>
+        
+        <div class="instructions">
+            <h3>🚀 Current Setup Status:</h3>
+            <p>✅ Favicon meta tags configured in layout.tsx</p>
+            <p>✅ Multiple favicon sizes supported</p>
+            <p>✅ SVG fallback included</p>
+            <p>⏳ <strong>Next:</strong> Replace placeholder favicon files with your custom design</p>
+        </div>
+    </div>
+</body>
+</html>

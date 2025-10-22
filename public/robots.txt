@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Disallow admin pages
+Disallow: /adminbilla/
+Disallow: /api/
+Disallow: /debug/
+
+# Allow important pages
+Allow: /tool/
+Allow: /login
+Allow: /signup
+Allow: /profile
+Allow: /premium-tools
+
+# Sitemap location
+Sitemap: https://ugenpro.site/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
